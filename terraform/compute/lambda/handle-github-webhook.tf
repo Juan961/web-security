@@ -20,7 +20,11 @@ resource "aws_lambda_function" "hanle_github_webhook" {
 
   environment {
     variables = {
-      DEMO = "DEMO"
+      DB_HOST     = "platzi-course.cfbmmy7rkrlp.us-east-1.rds.amazonaws.com"
+      DB_PORT     = "5432"
+      DB_USER     = "postgres"
+      DB_PASSWORD = "rds!db-78bea4ba-35c2-4697-9fab-4b80d4589ea5" 
+      DB_NAME     = "postgres"
     }
   }
 }
