@@ -2,7 +2,7 @@ package models
 
 // Prompt: Podías darme una estructura de Go donde pueda hacer unmarshal de este json, response de GitHub Webhook
 
-const REGION = "us-east-2"
+const REGION = "us-east-1"
 
 type GitHubWebhook struct {
 	Repository Repository `json:"repository"`

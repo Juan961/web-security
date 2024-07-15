@@ -1,6 +1,6 @@
 // Tabla de la base de datos
 
-package repository 
+package repository
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 
 type Commit interface {
 	Insert(ctx context.Context, commit *entity.Commit) (err error)
-	GetCommitByAuthorEmail(ctx context.Context, email string) (commits []entity.Commit, err error)
+	GetCommitsByAuthorEmail(ctx context.Context, email string) (commits []entity.Commit, err error)
 }
 
 type commit struct {
