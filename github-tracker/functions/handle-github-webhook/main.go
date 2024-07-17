@@ -24,7 +24,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
 )
 
-const SignaturePrefix = "sha-256="
+const SignaturePrefix = "sha256="
 
 var ErrInvalidWebhook = errors.New("invalid github webhook")
 
