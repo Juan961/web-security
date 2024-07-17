@@ -134,4 +134,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+*.zip
+bootstrap
+
 # End of https://www.toptal.com/developers/gitignore/api/go,windows,linux,macos

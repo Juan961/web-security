@@ -25,6 +25,8 @@ resource "aws_lambda_function" "hanle_github_webhook" {
       DB_USER     = "postgres"
       DB_PASSWORD = "rds!db-78bea4ba-35c2-4697-9fab-4b80d4589ea5" 
       DB_NAME     = "postgres"
+
+      GITHUB_SECRET = "github/secret"
     }
   }
 }
